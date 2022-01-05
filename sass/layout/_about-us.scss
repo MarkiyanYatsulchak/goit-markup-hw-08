@@ -2,8 +2,17 @@
     padding-top: 0;
 }
 
+.section--not-displayd {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .about-us {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .about-us__item {
