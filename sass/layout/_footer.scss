@@ -1,27 +1,46 @@
 .footer-page {
     padding: 60px 0;
+    text-align: center;
     background-color: var(--main-background-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-container {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        align-items: baseline;
         justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         align-items: baseline;
         justify-content: space-between;
+    }
+}
+
+.footer-wrap {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
     }
 }
 
 .footer-logo {
     display: flex;
     justify-content: center;
-    margin-right: 0px;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -29,19 +48,19 @@
     }
 }
 
-.address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: flex-start;
-    }
+.footer-logo__light {
+    color: var(--first-title-color);
 }
 
+// .address {
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         align-items: flex-start;
+//     }
+// }
+
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address__link {
@@ -64,7 +83,6 @@
 
 .footer__text {
     margin-bottom: 20px;
-    margin-top: 60px;
 
     font-style: normal;
     font-weight: 700;
@@ -76,7 +94,7 @@
     color: var(--first-title-color);
 
     @media screen and (min-width: 1200px) {
-        margin-top: 0;
+        text-align: left;
     }
 }
 
@@ -93,7 +111,7 @@
 }
 
 .subscribe__input {
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -110,6 +128,10 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 358px;
     }
@@ -120,6 +142,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 12px;
+        padding-top: 0;
     }
 }
 
