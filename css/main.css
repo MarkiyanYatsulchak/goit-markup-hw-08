@@ -884,7 +884,7 @@ img {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -900,12 +900,12 @@ img {
   }
 }
 
-.filter__item {
+.filter__item:nth-child(2n) {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter__item {
+  .filter__item:nth-child(2n) {
     margin-bottom: 0px;
   }
 }
